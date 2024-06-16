@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Jokes</title>
+</head>
+<body>
+    <h1> Jokes By You</h1>
+    <% for( joke of jokes ) { %>
+        <div class = "main-jokes">
+            <p class="name">Username:@<%=joke.username%></p>
+            <p class="setup">Line 1: <%= joke.setup %></p>
+            <button class = "punchline" ><a href = "http://localhost:8080/jokes/<%=joke.id %>">Punchline</a></button><br>
+            <button class = "punchline"><a href = "http://localhost:8080/jokes/<%=joke.id %>/edit">Edit joke</a></button>
+            <form method="post" action="/jokes/<%=joke.id %>?_method=DELETE">
+                <button class = "punchline">Delete Joke</button>
+                </form>
+        </div>
+        
+    
+    <% } %>
+    <br>
+    <br>
+
+    <button class = "punchline add" ><a href = "http://localhost:8080/jokes/add">Add a new joke</a></button>
+    
+</body>
+</html>

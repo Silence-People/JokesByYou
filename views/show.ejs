@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="/style.css">
+    <title>Full Joke</title>
+</head>
+<body>
+    <h1> Complete Joke</h1>
+    <div class = "main-jokes">
+        <p class="name">Username:@<%=joke.username%></p>
+        <p class="setup"><%= joke.setup %></p>
+        <p class = "punch"><b><%= joke.punchline %></b></p>
+</div>
+<button class = "punchline"><a href = "http://localhost:8080/jokes/<%=joke.id %>/edit">Edit joke</a></button>
+<form method="post" action="/jokes/<%=joke.id %>?_method=DELETE">
+<button class = "punchline">Delete Joke</button>
+</form>
+</body>
+</html>

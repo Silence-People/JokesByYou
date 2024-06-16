@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="/style.css">
+    <title>Edit the joke</title>
+</head>
+<body>
+    <h1> Edit Joke</h1>
+    <div class = "form">
+    <form class="edit-form" method = "post" action = "/jokes/<%=joke.id%>?_method=PATCH">
+
+        <p> Username: <b><%= joke.username %></b></p>
+        Setup:<br>
+        <textarea rows="5" cols ="60"  name = "setup"> <%= joke.setup %>
+        </textarea><br><br>
+        Punchline:<br>
+        <textarea rows="5" cols ="60" name = "punchline" ><%= joke.punchline %>
+        </textarea><br><br>
+
+        <button class="punchline">Submit the joke</button>
+    </form>
+</div>
+    
+</body>
+</html>

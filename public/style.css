@@ -1,0 +1,49 @@
+
+body{
+    background-color: #E2F89C;
+}
+
+h1{
+    color: #3F7CAC;
+    text-align: center;
+}
+.main-jokes{
+    margin: 10px;
+    padding: 10px;
+    background-color: #95AFBA;
+}
+ .name{
+    font-weight: bolder;
+    color: #26081C;
+ }
+ .setup{
+    font-weight: bolder;
+    color: #26081C;
+ }
+ .edit-form{
+    margin: 15px;
+    padding:15px;
+ }
+
+ .punchline{
+    border : 2px solid black;
+    border-radius: 15px;
+    background-color: #380036;
+    color: #0CBABA;
+    
+    padding: 10px;
+    margin: 10px;
+ }
+ .add{
+    margin-left: 100vh;
+ }
+ a{
+    text-decoration: none;
+    color: #0CBABA;
+ }
+ .punch{
+    font-size: 24px;
+ }
+ 
+ 
+ 

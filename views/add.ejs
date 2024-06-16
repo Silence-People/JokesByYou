@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="/style.css">
+    <title>Add a Joke</title>
+</head>
+<body>
+    <h1> Enter your Joke</h1>
+    <div class = "form">
+    <form class = "edit-form" method = "post" action = "/jokes">
+        Username:<br>
+        <input placeholder = "Username" name="username"><br><br>
+        Setup:<br>
+        <textarea rows="5" cols ="60"  name = "setup">
+        </textarea><br><br>
+        Punchline:<br>
+        <textarea rows="5" cols ="60"  placeholder="Punchline for the setup" name = "punchline">
+        </textarea><br><br>
+
+        <button class="punchline">Submit the joke</button>
+    </form>
+</div>
+    
+</body>
+</html>
